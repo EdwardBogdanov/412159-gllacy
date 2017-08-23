@@ -16,19 +16,19 @@
                 <li><a href="catalog.html">Каталог</a>
                     <ul>
                         <li>Новинки</li>
-                        <li>Сливочное</li>
-                        <li>Щербеты</li>
-                        <li>Фруктовый лед</li>
-                        <li>Мелорин</li>
+                        <li><a class="ice-cream" href="#">Сливочное</a></li>
+                        <li><a class="cream" href="#">Щербеты</a></li>
+                        <li><a class="fruit-ice" href="#">Фруктовый лед</a></li>
+                        <li><a class="merolin" href="#">Мелорин</a></li>
                     </ul>
                 </li>
                 <li><a href="delivery.html">Доставка и оплата</a></li>
                 <li><a href="info.html">О компании</a></li>
             </ul>
             <ul class="user-navigation">
-                <li class="search-link">x</li>
-                <li class="login-link">Вход</li>
-                <li class="bin-link">Корзина</li>
+                <li class="search-link"><button class="search-link">Искать</button></li>
+                <li class="login-link"><a class="login-link" href="html.com">Вход</a></li>
+                <li class="bin-link"><a class="bin-link" href="bin.html">Корзина</a></li>
             </ul>
             <p class="contacts">
                 C 10 до 22, ежедневно<br> 8 812 450-25-25</p>
@@ -47,6 +47,7 @@
             <input type="radio" name="slider1" id="slider3">
             <label for="slider3"></label>
             <div></div>
+            <a class="slaider" href="#">Давайте Оба!</a>
         </section>
         </section>
         <section class="banner">
@@ -54,11 +55,11 @@
                 <li class="banner-item">
                     <h3>Малинка даром!</h3>
                     <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                    <a class="button" href="#">Хочу варенье!</a></li>
+                    <a class="button-jam" href="#">Хочу варенье!</a></li>
                 <li class="banner-item">
                     <h3>Шоколадки даром!</h3>
                     <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковкувкуснейшей шоколадной присыпки совершенно бесплатно</p>
-                    <a class="button" href="#">Хочу шоколадки!</a>
+                    <a class="button-chocolate" href="#">Хочу шоколадки!</a>
                 </li>
             </ul>
         </section>
@@ -167,17 +168,20 @@
         <section class="modal modal-search">
             <h2 class="visually-hidden">Поиск</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                <input class="search-icon-user" type="text" name="search" placeholder="Что ищите?">
+                <label for="search-user" class="visually-hidden">Что ищете?</label>
+                <input id="search-user" class="search-icon-user" type="text" name="search" placeholder="Что ищите?">
             </form>
         </section>
         <section class="modal modal-contacts">
             <h2>Мы обязательно вам ответим!</h2>
             <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
                 <p>
-                    <input class="contacts-icon-user" type="text" name="name" placeholder="Как вас зовут?">
+                    <label for="contact-name">Как вас зовут?</label>
+                    <input id="contact-name" class="contacts-icon-user" type="text" name="name" placeholder="Как вас зовут?">
                 </p>
                 <p>
-                    <input class="contacts-icon-mail" type="email" name="mail" placeholder="Ваша почта для ответа?">
+                    <label for="contact-mail">Ваша почта для ответа?</label>
+                    <input id="contact-mail" class="contacts-icon-mail" type="email" name="mail" placeholder="Ваша почта для ответа?">
                 </p>
                 <p>
                     <textarea></textarea>
@@ -191,10 +195,12 @@
             <h2 class="visually-hidden">Личный кабинет</h2>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                 <p>
-                    <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+                    <label for="login-user">Логин</label>
+                    <input id="login-user" class="login-icon-user" type="text" name="login" placeholder="Логин">
                 </p>
                 <p>
-                    <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+                    <label for="password-user">Пароль</label>
+                    <input id="password-user" class="login-icon-password" type="password" name="password" placeholder="Пароль">
                 </p>
                 <a class="restore" href="#">Забыли пароль?</a>
                 <a class="registration" href="#">Новая регистрация</a>
@@ -202,7 +208,7 @@
                   Войти
               </button>
             </form>
-            <span class="modal-close">x</span>
+            <button class="modal-close" type="submit">Закрыть</button>
         </section>
     </main>
     <footer class="main-footer">
