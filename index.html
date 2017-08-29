@@ -38,32 +38,39 @@
         </nav>
     </header>
     <main class="container">
-        <section class="slaider">
-            <input type="radio" name="slider1" id="slider1" checked="checked">
-            <label for="slider1"></label>
-            <div></div>
+        <section class="slider-area">
+            <input type="radio" name="point" id="slide1" checked>
+            <input type="radio" name="point" id="slide2">
+            <input type="radio" name="point" id="slide3">
 
-            <input type="radio" name="slider1" id="slider2">
-            <label for="slider2"></label>
-            <div></div>
+            <div class="slider">
+                <div class="slides slide1"></div>
+                <div class="slides slide2"></div>
+                <div class="slides slide3"></div>
 
-            <input type="radio" name="slider1" id="slider3">
-            <label for="slider3"></label>
-            <div></div>
-            <a class="slaider" href="#">Давайте Оба!</a>
+            </div>
+            <div class="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+
+            </div>
+
+
+            <a class="button" href="#">Давайте Оба!</a>
         </section>
-        </section>
+
 
         <section class="banner">
             <ul class="banner-list">
                 <li class="banner-item-1">
                     <h3>Малинка даром!</h3>
                     <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                    <a class="button-jam" href="#">Хочу варенье!</a></li>
+                    <a class="button" href="#">Хочу варенье!</a></li>
                 <li class="banner-item-2">
                     <h3>Шоколадки даром!</h3>
                     <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковкувкуснейшей шоколадной присыпки совершенно бесплатно</p>
-                    <a class="button-chocolate" href="#">Хочу шоколадки!</a>
+                    <a class="button" href="#">Хочу шоколадки!</a>
                 </li>
             </ul>
         </section>
@@ -162,84 +169,84 @@
                 <li class="map-item">
                     <h2 class="visually-hidden">Как до нас добраться</h2>
                 </li>
-                <li class="map-list">
+                <li class="map-item">
                     <h2 class="visually-hidden">Контактная информация</h2>
                     <p>
                         <img src="img/map.jpg" width="1250" height="437" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
                     </p>
-                    <p>
+                    <p class="map-info">
                         Адрес главного офиса и офлайн магазина:<br> ул. Б. Конюшенная, д. 19/8, Санкт-Петербург<br> Для заказов по телефону:<br> 8 812 450-25-25<br> (c 10 до 20ежедневно)</p>
-                    <a class="button contacts-button" href="contacts.html">Форма обратной связи</a>
+                    <a class=" button contacts-button " href="contacts.html ">Форма обратной связи</a>
                 </li>
             </ul>
         </section>
-        <section class="modal modal-search">
-            <h2 class="visually-hidden">Поиск</h2>
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                <label for="search-user" class="visually-hidden">Что ищете?</label>
-                <input id="search-user" class="search-icon-user" type="text" name="search" placeholder="Что ищите?">
+        <section class="modal modal-search ">
+            <h2 class="visually-hidden ">Поиск</h2>
+            <form class="search-form " action="https://echo.htmlacademy.ru " method="get ">
+                <label for="search-user " class="visually-hidden ">Что ищете?</label>
+                <input id="search-user " class="search-icon-user " type="text " name="search " placeholder="Что ищите? ">
             </form>
         </section>
-        <section class="modal modal-contacts">
+        <section class="modal modal-contacts ">
             <h2>Мы обязательно вам ответим!</h2>
-            <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
+            <form class="contacts-form " action="https://echo.htmlacademy.ru " method="post ">
                 <p>
-                    <label for="contact-name">Как вас зовут?</label>
-                    <input id="contact-name" class="contacts-icon-user" type="text" name="name" placeholder="Как вас зовут?">
+                    <label for="contact-name ">Как вас зовут?</label>
+                    <input id="contact-name " class="contacts-icon-user " type="text " name="name " placeholder="Как вас зовут? ">
                 </p>
                 <p>
-                    <label for="contact-mail">Ваша почта для ответа?</label>
-                    <input id="contact-mail" class="contacts-icon-mail" type="email" name="mail" placeholder="Ваша почта для ответа?">
+                    <label for="contact-mail ">Ваша почта для ответа?</label>
+                    <input id="contact-mail " class="contacts-icon-mail " type="email " name="mail " placeholder="Ваша почта для ответа? ">
                 </p>
                 <p>
                     <textarea></textarea>
                 </p>
-                <button class="button" type="submit">
+                <button class="button " type="submit ">
                   Отправить
               </button>
             </form>
         </section>
-        <section class="modal modal-login">
-            <h2 class="visually-hidden">Личный кабинет</h2>
-            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <section class="modal modal-login ">
+            <h2 class="visually-hidden ">Личный кабинет</h2>
+            <form class="login-form " action="https://echo.htmlacademy.ru " method="post ">
                 <p>
-                    <label for="login-user">Логин</label>
-                    <input id="login-user" class="login-icon-user" type="text" name="login" placeholder="Логин">
+                    <label for="login-user ">Логин</label>
+                    <input id="login-user " class="login-icon-user " type="text " name="login " placeholder="Логин ">
                 </p>
                 <p>
-                    <label for="password-user">Пароль</label>
-                    <input id="password-user" class="login-icon-password" type="password" name="password" placeholder="Пароль">
+                    <label for="password-user ">Пароль</label>
+                    <input id="password-user " class="login-icon-password " type="password " name="password " placeholder="Пароль ">
                 </p>
-                <a class="restore" href="#">Забыли пароль?</a>
-                <a class="registration" href="#">Новая регистрация</a>
-                <button class="button" type="submit">
+                <a class="restore " href="# ">Забыли пароль?</a>
+                <a class="registration " href="# ">Новая регистрация</a>
+                <button class="button " type="submit ">
                   Войти
               </button>
             </form>
-            <button class="modal-close" type="submit">Закрыть</button>
+            <button class="modal-close " type="submit ">Закрыть</button>
         </section>
     </main>
-    <footer class="main-footer">
-        <div class="footer-social">
-            <b>Давай дружить!</b>
-            <ul>
-                <li><a class="social-button" href="#">Твиттер</a></li>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
+    <footer class="main-footer ">
+        <div class="footer-social ">
+
+            <ul class="footer-social-item">
+                <li><a class="social-button " href="# ">Твиттер</a></li>
+                <li><a class="social-button " href="# ">Вконтакте</a></li>
+                <li><a class="social-button " href="# ">Фейсбук</a></li>
+                <li><a class="social-button " href="# ">Инстаграм</a></li>
             </ul>
         </div>
-        <div class="navigation-footer">
-            <ul class="navigation-footer-list">
-                <li><a href="#">Для поставщиков</a></li>
-                <li><a href="#">О производстве</a></li>
-                <li><a href="#">Наши документы</a></li>
-                <li><a href="#">Экологические стандарты</a></li>
+        <div class="navigation-footer ">
+            <ul class="navigation-footer-list ">
+                <li><a href="# ">Для поставщиков</a></li>
+                <li><a href="# ">О производстве</a></li>
+                <li><a href="# ">Наши документы</a></li>
+                <li><a href="# ">Экологические стандарты</a></li>
             </ul>
         </div>
-        <p class="footer-copyright">
+        <p class="footer-copyright ">
             <b>Сделанов в</b>
-            <a class="button" href="https://htmlacademy.ru">HTMLAcademy</a>
+            <a class="button-btn" href="https://htmlacademy.ru ">HTMLAcademy</a>
         </p>
     </footer>
 </body>
