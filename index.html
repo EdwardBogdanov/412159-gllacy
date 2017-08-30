@@ -44,9 +44,15 @@
             <input type="radio" name="point" id="slide3">
 
             <div class="slider">
-                <div class="slides slide1"></div>
-                <div class="slides slide2"></div>
-                <div class="slides slide3"></div>
+                <div class="slides slide1">
+                    <p class="slide-item">Крем-брюле и пломбир<br> с малиновым джемом</p>
+                </div>
+                <div class="slides slide2">
+                    <p class="slide-item">Шоколадный пломбир<br> и лимонный сорбет</p>
+                </div>
+                <div class="slides slide3">
+                    <p class="slide-item">Пломбир с помадкой<br> и клубничный щербет</p>
+                </div>
 
             </div>
             <div class="controls">
@@ -132,18 +138,22 @@
             <ul class="features-list">
                 <li class="features-item">
                     <h3 class="visually-hidden">Технологии</h3>
+                    <img src="img/ice-cream.svg">
                     <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудованияи проверенных временем технологий</p>
                 </li>
                 <li class="features-item">
                     <h3 class="visually-hidden">Качество</h3>
+                    <img src="img/eco.svg">
                     <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
                 </li>
                 <li class="features-item">
                     <h3 class="visually-hidden">Поставщики</h3>
+                    <img src="img/cow.svg">
                     <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
                 </li>
                 <li class="features-item">
                     <h3 class="visually-hidden">Доставка</h3>
+                    <img src="img/thermometer.svg">
                     <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
                 </li>
             </ul>
@@ -189,17 +199,18 @@
         </section>
         <section class="modal modal-contacts ">
             <h2>Мы обязательно вам ответим!</h2>
+            <button class="modal-close " type="submit ">Закрыть</button>
             <form class="contacts-form " action="https://echo.htmlacademy.ru " method="post ">
                 <p>
-                    <label for="contact-name ">Как вас зовут?</label>
+                    <label for="contact-name" class="visually-hidden">Как вас зовут?</label>
                     <input id="contact-name " class="contacts-icon-user " type="text " name="name " placeholder="Как вас зовут? ">
                 </p>
                 <p>
-                    <label for="contact-mail ">Ваша почта для ответа?</label>
+                    <label for="contact-mail" class="visually-hidden">Ваша почта для ответа?</label>
                     <input id="contact-mail " class="contacts-icon-mail " type="email " name="mail " placeholder="Ваша почта для ответа? ">
                 </p>
                 <p>
-                    <textarea></textarea>
+                    <textarea placeholder="Напишите что-нибудь..." rows="10" cols="50" name="text"></textarea>
                 </p>
                 <button class="button " type="submit ">
                   Отправить
@@ -210,11 +221,11 @@
             <h2 class="visually-hidden ">Личный кабинет</h2>
             <form class="login-form " action="https://echo.htmlacademy.ru " method="post ">
                 <p>
-                    <label for="login-user ">Логин</label>
-                    <input id="login-user " class="login-icon-user " type="text " name="login " placeholder="Логин ">
+                    <label for="login-user" class="visually-hidden">Логин</label>
+                    <input id="login-user " class="login-icon-user " type="text " name="login " placeholder="Электронная почта">
                 </p>
                 <p>
-                    <label for="password-user ">Пароль</label>
+                    <label for="password-user" class="visually-hidden">Пароль</label>
                     <input id="password-user " class="login-icon-password " type="password " name="password " placeholder="Пароль ">
                 </p>
                 <a class="restore " href="# ">Забыли пароль?</a>
