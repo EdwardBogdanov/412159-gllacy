@@ -1,12 +1,5 @@
 html,
 body {
-    min-height: 100vh;
-    /* для демо */
-    margin: 0;
-    /* для демо */
-}
-
-body {
     font-size: 18px;
     line-height: 1.2;
     font-family: "Roboto", "Arial", sans-serif;
@@ -19,7 +12,6 @@ body>input[type="radio"] {
 
 .site-wrapper {
     min-width: 1280px;
-    min-height: 100vh;
     /* для демо */
     background-repeat: no-repeat;
     background-position: top center;
@@ -49,113 +41,6 @@ body>input[type="radio"] {
     padding: 0 20px;
 }
 
-.main-header {
-    height: 100px;
-    /* для демо */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* для демо */
-    box-shadow: inset 0 0 0 4px #000000;
-    /* для демо */
-}
-
-.slider {
-    position: relative;
-    padding-top: 270px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.slide {
-    display: none;
-}
-
-.slide-title {
-    width: 700px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    font-weight: 800;
-    font-size: 60px;
-}
-
-.slide-btn {
-    display: inline-block;
-    padding: 12px 50px;
-    font-weight: 600;
-    font-size: 31px;
-    line-height: 41px;
-    vertical-align: top;
-    color: #ffffff;
-    text-decoration: none;
-    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-    background: #f26843;
-    background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
-    background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-    border-radius: 100px;
-    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-}
-
-.slide-btn:hover {
-    background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-    background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-    box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-}
-
-.slide-btn:active {
-    background: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-    background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-}
-
-.slider-controls {
-    position: absolute;
-    bottom: 25px;
-    left: 0;
-    z-index: 20;
-    font-size: 0;
-}
-
-.slider-controls label {
-    display: inline-block;
-    width: 17px;
-    height: 17px;
-    margin-right: 8px;
-    vertical-align: top;
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-#btn-1:checked~.site-wrapper #slide1,
-#btn-2:checked~.site-wrapper #slide2,
-#btn-3:checked~.site-wrapper #slide3 {
-    display: block;
-}
-
-#btn-1:checked~.site-wrapper {
-    background-color: #849d8f;
-    background-image: url("../img/slide-1.png");
-}
-
-#btn-2:checked~.site-wrapper {
-    background-color: #8996a6;
-    background-image: url("../img/slide-2.png");
-}
-
-#btn-3:checked~.site-wrapper {
-    background-color: #9d8b84;
-    background-image: url("../img/sldie-3.png");
-}
-
-#btn-1:checked~.site-wrapper label[for="btn-1"],
-#btn-2:checked~.site-wrapper label[for="btn-2"],
-#btn-3:checked~.site-wrapper label[for="btn-3"] {
-    background-color: #ffffff;
-}
-
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -174,45 +59,115 @@ body>input[type="radio"] {
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
+a {
+    text-decoration: none;
+    color:#ffffff;
+}
+
 .conteiner {
     width: 1146px;
 }
 
-.visually-hidden {
-    display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
+/*---Шапка---*/
 .main-navigation {
     display: flex;
     flex-direction: row;
     font-size: 16px;
     line-height: 18px;
+    min-height: 226px;
     color: #ffffff;
     background-color: transparent;
 }
 
 .site-navigation {
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
-.site-navigation li {
+.site-navigation a {
     display: inline;
     padding-right: 25px;
 }
 
-.ice-cream-navigation {
-    display: none;
-}
+
 
 .user-navigation {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
 }
 
 .user-navigation li {
-    display: inline;
     padding-right: 25px;
     text-align: right;
+    
 }
+/*-----меню выпадающее-----*/
+
+.site-navigation > li {
+    position: relative;
+    margin-right:-4px;
+}
+
+.site-navigation .ice-cream-navigation {
+    position: absolute;
+    margin:0;
+    padding:0;
+    list-style:none;
+    background-color:#f8f7f4;
+    width:146px;
+    left:-10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.ice-cream-navigation li:first-child {
+    margin-bottom:-1px;
+    color:#323232;
+    font-weight: 700;
+    font-size:14px;
+    line-height: 16px;
+    padding:11px 22px;
+}
+
+.ice-cream-navigation li:first-child::after {
+    content: "";
+    position: relative;
+    background-image: url("../img/line.png");
+    background-position: center;
+    background-repeat: repeat;
+}
+
+
+.ice-cream-navigation a {
+    color:#323232;
+    font-size:14px;
+    line-height: 16px;
+    padding: 11px 22px;
+    display: inline-block;
+}
+
+
 
 .banner-list {
     list-style: none;
@@ -303,22 +258,22 @@ body>input[type="radio"] {
 
 .hits-1 {
     position: absolute;
-    top: 920px;
+    top: 945px;
 }
 
 .hits-2 {
     position: absolute;
-    top: 920px;
+    top: 945px;
 }
 
 .hits-3 {
     position: absolute;
-    top: 920px;
+    top: 945px;
 }
 
 .hits-4 {
     position: absolute;
-    top: 920px;
+    top: 945px;
 }
 
 .hit-item-price {
@@ -532,4 +487,103 @@ body>input[type="radio"] {
 
 .navigation-footer-list li:nth-child(1) {
     font-weight: 700;
+}
+
+/*-----Слайдер-----*/
+.slider {
+    position: relative;
+    padding-top: 270px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.slide {
+    display: none;
+}
+
+.slide-title {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.slide-btn {
+    display: inline-block;
+    padding: 12px 50px;
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 41px;
+    vertical-align: top;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+    background: #f26843;
+    background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+    border-radius: 100px;
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+.slide-btn:hover {
+    background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slide-btn:active {
+    background: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    z-index: 20;
+    font-size: 0;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+    vertical-align: top;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#btn-1:checked~.site-wrapper #slide1,
+#btn-2:checked~.site-wrapper #slide2,
+#btn-3:checked~.site-wrapper #slide3 {
+    display: block;
+}
+
+#btn-1:checked~.site-wrapper {
+    background-color: #849d8f;
+    background-image: url("../img/slide-1.png");
+}
+
+#btn-2:checked~.site-wrapper {
+    background-color: #8996a6;
+    background-image: url("../img/slide-2.png");
+}
+
+#btn-3:checked~.site-wrapper {
+    background-color: #9d8b84;
+    background-image: url("../img/sldie-3.png");
+}
+
+#btn-1:checked~.site-wrapper label[for="btn-1"],
+#btn-2:checked~.site-wrapper label[for="btn-2"],
+#btn-3:checked~.site-wrapper label[for="btn-3"] {
+    background-color: #ffffff;
 }
