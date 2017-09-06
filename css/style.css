@@ -803,3 +803,28 @@ input[type="radio"].visually-hidden {
     color: #000000;
     background-color: #ffffff;
 }
+
+.footer-social-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 141px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.navigation-footer-list a {
+    font-size: 13px;
+}
+
+.navigation-footer-list {
+    display: flex;
+    width: 309px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    line-height: 16px;
+    margin-top: 30px;
+}
