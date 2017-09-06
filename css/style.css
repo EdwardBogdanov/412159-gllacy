@@ -294,6 +294,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hit-list {
+    position: relative;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -304,22 +305,22 @@ input[type="radio"].visually-hidden {
 
 .hits-1 {
     position: absolute;
-    top: 945px;
+    top: 11px;
 }
 
 .hits-2 {
     position: absolute;
-    top: 945px;
+    top: 11px;
 }
 
 .hits-3 {
     position: absolute;
-    top: 945px;
+    top: 11px;
 }
 
 .hits-4 {
     position: absolute;
-    top: 945px;
+    top: 11px;
 }
 
 .hit-item-price {
@@ -327,7 +328,7 @@ input[type="radio"].visually-hidden {
     font-size: 45px;
     line-height: 45px;
     position: absolute;
-    top: 1060px;
+    bottom: 60px;
     color: #ffffff;
 }
 
@@ -486,6 +487,7 @@ input[type="radio"].visually-hidden {
     list-style: none;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .map-item-info {
@@ -494,8 +496,8 @@ input[type="radio"].visually-hidden {
     min-height: 305px;
     border-radius: 20px;
     position: absolute;
-    top: 1947px;
-    left: 970px;
+    right: 20px;
+    top: 50px;
 }
 
 .map-info {
