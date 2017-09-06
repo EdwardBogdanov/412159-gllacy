@@ -194,45 +194,8 @@
                         <input id="search-user " class="search-icon-user " type="text " name="search " placeholder="Что ищите? ">
                     </form>
                 </section>
-                <section class="modal modal-contacts ">
-                    <h2>Мы обязательно вам ответим!</h2>
-                    <button class="modal-close " type="submit ">Закрыть</button>
-                    <form class="contacts-form " action="https://echo.htmlacademy.ru " method="post ">
-                        <p>
-                            <label for="contact-name" class="visually-hidden">Как вас зовут?</label>
-                            <input id="contact-name " class="contacts-icon-user " type="text " name="name " placeholder="Как вас зовут? ">
-                        </p>
-                        <p>
-                            <label for="contact-mail" class="visually-hidden">Ваша почта для ответа?</label>
-                            <input id="contact-mail " class="contacts-icon-mail " type="email " name="mail " placeholder="Ваша почта для ответа? ">
-                        </p>
-                        <p>
-                            <textarea placeholder="Напишите что-нибудь..." rows="10" cols="50" name="text"></textarea>
-                        </p>
-                        <button class="button " type="submit ">
-                  Отправить
-              </button>
-                    </form>
-                </section>
-                <section class="modal modal-login ">
-                    <h2 class="visually-hidden ">Личный кабинет</h2>
-                    <form class="login-form " action="https://echo.htmlacademy.ru " method="post ">
-                        <p>
-                            <label for="login-user" class="visually-hidden">Логин</label>
-                            <input id="login-user " class="login-icon-user " type="text " name="login " placeholder="Электронная почта">
-                        </p>
-                        <p>
-                            <label for="password-user" class="visually-hidden">Пароль</label>
-                            <input id="password-user " class="login-icon-password " type="password " name="password " placeholder="Пароль ">
-                        </p>
-                        <a class="restore " href="# ">Забыли пароль?</a>
-                        <a class="registration " href="# ">Новая регистрация</a>
-                        <button class="button " type="submit ">
-                  Войти
-              </button>
-                    </form>
-                    <button class="modal-close " type="submit ">Закрыть</button>
-                </section>
+
+
             </main>
             <footer class="main-footer ">
                 <div class="footer-social ">
@@ -259,8 +222,44 @@
                     <a class="button-btn" href="https://htmlacademy.ru ">HTMLAcademy</a>
                 </p>
             </footer>
+            <section class="modal modal-login">
+                <h2 class="visually-hidden">Личный кабинет</h2>
+                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                    <p>
+                        <label for="login-user" class="visually-hidden">Логин</label>
+                        <input id="login-user" class="login-icon-user" type="text" name="login" placeholder="Логин">
+                    </p>
+                    <p>
+                        <label for="password-user" class="visually-hidden">Пароль</label>
+                        <input id="password-user" class="login-icon-password" type="password" name="password" placeholder="Пароль">
+                    </p>
+                    <a class="restore" href="#">Забыли пароль?</a>
+                    <a class="registration" href="#">Новая регистрация</a>
+                    <button class="button" type="button">Войти</button>
+            </section>
+            <section class="modal modal-contacts ">
+                <h2>Мы обязательно вам ответим!</h2>
+                <button class="modal-close " type="submit ">Закрыть</button>
+                <form class="contacts-form " action="https://echo.htmlacademy.ru " method="post ">
+                    <p>
+                        <label for="contact-name" class="visually-hidden">Как вас зовут?</label>
+                        <input id="contact-name " class="contacts-icon-user " type="text " name="name " placeholder="Как вас зовут? ">
+                    </p>
+                    <p>
+                        <label for="contact-mail" class="visually-hidden">Ваша почта для ответа?</label>
+                        <input id="contact-mail " class="contacts-icon-mail " type="email " name="mail " placeholder="Ваша почта для ответа? ">
+                    </p>
+                    <p>
+                        <textarea placeholder="Напишите что-нибудь..." rows="10" cols="50" name="text"></textarea>
+                    </p>
+                    <button class="button " type="submit ">
+              Отправить
+          </button>
+                </form>
+            </section>
         </div>
     </div>
+
 </body>
 
 </html>

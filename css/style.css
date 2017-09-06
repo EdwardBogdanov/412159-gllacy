@@ -835,3 +835,35 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
     position: relative;
 }
+
+.modal {
+    color: #000000;
+    background-color: #f8f3f0;
+    background-position: 0 0;
+    background-repeat: repeat;
+    position: fixed;
+}
+
+.modal-login {
+    width: 278px;
+    top: 60px;
+    left: 70%;
+    padding: 0;
+    display: none;
+}
+
+
+}
+.login-form p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    box-sizing: border-box;
+    width: 239px;
+    padding: 10px 15px;
+    font: inherit;
+    color: #000000;
+    text-transform: uppercase;
+}
