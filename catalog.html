@@ -55,7 +55,7 @@
                     <div class="flex-container">
                         <h2 class="visually-hidden">Фильтр Товаров</h2>
                         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                            <fieldset>
+                            <fieldset class="Sort">
                                 <legend>Сортировка:</legend>
                                 <select name="Sort">
                 <option value="popluar">По популярности</option>
@@ -64,13 +64,13 @@
                 <option value="fat">По жирности</option>
             </select>
                             </fieldset>
-                            <fieldset>
-                                <legend>Цена:</legend>
-                                100 руб.<input type="range" name="cost" min="50" max="1000" step="5">500 руб.
+                            <fieldset class="cost">
+                                <legend>Цена:100 руб. - 500 руб.</legend>
+                                <input type="range" name="cost" min="50" max="1000" step="5">
                             </fieldset>
-                            <fieldset>
+                            <fieldset class="fat">
                                 <legend>Жирность:</legend>
-                                <ul>
+                                <ul class="filter-list">
                                     <li class="filter-option">
                                         <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="none">0%</li>
                                     <li class="filter-option">
@@ -83,7 +83,7 @@
                             </fieldset>
                             <fieldset>
                                 <legend>Наполнители</legend>
-                                <ul>
+                                <ul class="filter-list">
                                     <li class="filter-option"><input class="visually-hidden filter-input filter-input-
                             checkbox" type="checkbox" name="chocolate" checked>шоколадные</li>
                                     <li class="filter-option"><input class="visually-hidden filter-input filter-input-
@@ -104,7 +104,7 @@
                     <h2 class="visually-hidden">Сливочное мороженое</h2>
                     <ul class="catalog-list">
                         <li class="catalog-item">
-                            <h3>
+                            <h3 class="visually-hidden">
                                 <a href="catalog-item.html">
                                     <span class="catalog-category">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
                                 </a>
@@ -117,9 +117,10 @@
                             <p class="catalog-item-price">
                                 <b>310 P/кг</b>
                             </p>
+                            <p class="catalog-item-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
                         </li>
                         <li class="catalog-item">
-                            <h3>
+                            <h3 class="visually-hidden">
                                 <a href="catalog-item.html">
                                     <span class="catalog-category">Сливочно-кофейное с кусочками шоколада</span>
                                 </a>
@@ -132,9 +133,10 @@
                             <p class="catalog-item-price">
                                 <b>380 P/кг</b>
                             </p>
+                            <p class="catalog-item-name">Сливочно-кофейное с кусочками шоколада</p>
                         </li>
                         <li class="catalog-item">
-                            <h3>
+                            <h3 class="visually-hidden">
                                 <a href="catalog-item.html">
                                     <span class="catalog-category">Сливочно-клубничное с присыпкой из белого шоколада</span>
                                 </a>
@@ -147,9 +149,10 @@
                             <p class="catalog-item-price">
                                 <b>355 P/кг</b>
                             </p>
+                            <p class="catalog-item-name">Сливочно-клубничное с присыпкой из белого шоколада</p>
                         </li>
                         <li class="catalog-item">
-                            <h3>
+                            <h3 class="visually-hidden">
                                 <a href="catalog-item.html">
                                     <span class="catalog-category">Сливочное крем-брюле с карамельной подливкой</span>
                                 </a>
@@ -162,9 +165,10 @@
                             <p class="catalog-item-price">
                                 <b>415 P/кг</b>
                             </p>
+                            <p class="catalog-item-name">Сливочное крем-брюле с карамельной подливкой</p>
                         </li>
                         <li class="catalog-item">
-                            <h3>
+                            <h3 class="visually-hidden">
                                 <a href="catalog-item.html">
                                     <span class="catalog-category">Сливочное с брусничным джемом</span>
                                 </a>
@@ -177,9 +181,10 @@
                             <p class="catalog-item-price">
                                 <b>325 P/кг</b>
                             </p>
+                            <p class="catalog-item-name">Сливочное с брусничным джемом</p>
                         </li>
                         <li class="catalog-item">
-                            <h3>
+                            <h3 class="visually-hidden">
                                 <a href="catalog-item.html">
                                     <span class="catalog-category">Сливочно-черничное с цельными ягодами черники</span>
                                 </a>
@@ -192,9 +197,10 @@
                             <p class="catalog-item-price">
                                 <b>410 P/кг</b>
                             </p>
+                            <p class="catalog-item-name">Сливочно-черничное с цельными ягодами черники</p>
                         </li>
                         <li class="catalog-item">
-                            <h3>
+                            <h3 class="visually-hidden">
                                 <a href="catalog-item.html">
                                     <span class="catalog-category">Сливочно-лимонное с карамельной присыпкой</span>
                                 </a>
@@ -207,9 +213,10 @@
                             <p class="catalog-item-price">
                                 <b>375 P/кг</b>
                             </p>
+                            <p class="catalog-item-name">Сливочно-лимонное с карамельной присыпкой</p>
                         </li>
                         <li class="catalog-item">
-                            <h3>
+                            <h3 class="visually-hidden">
                                 <a href="catalog-item.html">
                                     <span class="catalog-category">Сливочное с шоколадной стружкой</span>
                                 </a>
@@ -222,9 +229,10 @@
                             <p class="catalog-item-price">
                                 <b>320 P/кг</b>
                             </p>
+                            <p class="catalog-item-name">Сливочное с шоколадной стружкой</p>
                         </li>
                         <li class="catalog-item">
-                            <h3>
+                            <h3 class="visually-hidden">
                                 <a href="catalog-item.html">
                                     <span class="catalog-category">Сливочно-ванильное с кусочками шоколада</span>
                                 </a>
@@ -237,9 +245,10 @@
                             <p class="catalog-item-price">
                                 <b>440 P/кг</b>
                             </p>
+                            <p class="catalog-item-name">Сливочно-ванильное с кусочками шоколада</p>
                         </li>
                         <li class="catalog-item">
-                            <h3>
+                            <h3 class="visually-hidden">
                                 <a href="catalog-item.html">
                                     <span class="catalog-category">Сливочное с ментоловым сиропом</span>
                                 </a>
@@ -252,9 +261,10 @@
                             <p class="catalog-item-price">
                                 <b>435 P/кг</b>
                             </p>
+                            <p class="catalog-item-name">Сливочное с ментоловым сиропом</p>
                         </li>
                         <li class="catalog-item">
-                            <h3>
+                            <h3 class="visually-hidden">
                                 <a href="catalog-item.html">
                                     <span class="catalog-category">Сливочное с кусочками черного шоколада</span>
                                 </a>
@@ -267,9 +277,10 @@
                             <p class="catalog-item-price">
                                 <b>355 P/кг</b>
                             </p>
+                            <p class="catalog-item-name">Сливочное с кусочками черного шоколада</p>
                         </li>
                         <li class="catalog-item">
-                            <h3>
+                            <h3 class="visually-hidden">
                                 <a href="catalog-item.html">
                                     <span class="catalog-category">Сливочное с мятным сиропом</span>
                                 </a>
@@ -282,6 +293,7 @@
                             <p class="catalog-item-price">
                                 <b>420 P/кг</b>
                             </p>
+                            <p class="catalog-item-name">Сливочное с мятным сиропом</p>
                         </li>
                     </ul>
                     <ul class="pagination-list">

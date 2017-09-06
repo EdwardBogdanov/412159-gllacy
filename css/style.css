@@ -710,3 +710,96 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     align-content: stretch;
 }
+
+.filter-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 10px;
+}
+
+.Sort {
+    width: 193;
+    border: none;
+}
+
+.cost {
+    border: none;
+    width: 217px;
+}
+
+.fat {
+    border: none;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-list {
+    margin: 0;
+    padding: 0;
+    width: 1146px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.catalog-item-price {
+    font: inherit;
+    font-size: 45px;
+    line-height: 45px;
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+}
+
+.catalog-item-name {
+    width: 195px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: underline;
+    justify-content: center;
+}
+
+.pagination-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagination-item a {
+    display: block;
+    padding-right: 25px;
+    color: #ffffff;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+    background-color: #663d15;
+}
+
+.pagination-item-current a {
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+    color: #000000;
+    background-color: #ffffff;
+}
