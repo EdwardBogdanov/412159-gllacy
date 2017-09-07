@@ -12,37 +12,109 @@
     <div class="site-wrapper">
         <div class="content-wrapper">
             <header class="main-header">
-                <nav class="main-navigation">
-                    <a class="main-header-logo">
-                        <img src="img/logo.svg" width="157" height="65" alt="Логотип Глейсишоп">
-                    </a>
-                    <ul class="site-navigation">
-                        <li><a href="catalog.html">Каталог</a></li>
-                        <li><a href="delivery.html">Доставка и оплата</a></li>
-                        <li><a href="info.html">О компании</a></li>
-                    </ul>
-                    <ul class="user-navigation">
-                        <li class="search-link"><button class="search-link" type="submit">Искать</button></li>
-                        <li class="login-link"><a class="login-link" href="html.com">Вход</a></li>
-                        <li class="bin-link"><a class="bin-link" href="bin.html">Корзина</a>
-                            <ul class="bin-product">
-                                <li>
-                                    <button class="bin-item" type="submit">Удалить</button><img src="img/product1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"><span class="bin-price">1.5 кг х 200 руб.</span><span class="bin-cost">300 руб.</span>
-                                </li>
-                                <li>
-                                    <button class="bin-item" type="submit">Удалить</button><img src="img/product2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"><span class="bin-price">1.5 кг х 300 руб.</span>
-                                    <span class="bin-cost">450 руб.</span>
-                                </li>
-                                <li>
-                                    <span class="bin-cost">Итого: 750 руб.</span>
-
-                                    <a class="button" href="#">Оформить заказ</a></li>
+                    <nav class="main-navigation">
+                            <a class="main-header-logo" href="index.html" title="На главную страницу">
+                              <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
+                            </a>
+                            <ul class="site-navigation">
+                              <li id="catalog" class="site-navigation-item site-navigation-current">
+                                <a href="#catalog">Каталог</a>
+                                <ul class="ice-cream-navigation">
+                                  <li class="ice-cream-navigation-item ice-cream-navigation-lead"><a href="#">Новинки</a></li>
+                                  <li class="ice-cream-navigation-item ice-cream-navigation-current"><a>Сливочное</a></li>
+                                  <li class="ice-cream-navigation-item"><a href="#">Щербеты</a></li>
+                                  <li class="ice-cream-navigation-item"><a href="#">Фруктовый лед</a></li>
+                                  <li class="ice-cream-navigation-item"><a href="#">Мелорин</a></li>
+                                </ul>
+                              </li>
+                              <li class="site-navigation-item"><a id="pay-link" href="#">Доставка и оплата</a></li>
+                              <li class="site-navigation-item"><a href="#">О Компании</a></li>
                             </ul>
-                        </li>
-                    </ul>
-                    <p class="contacts">
-                        C 10 до 22, ежедневно<br> 8 812 450-25-25</p>
-                </nav>
+                    <ul class="user-navigation">
+                            <li id="search" class="search-link">
+                                    <a class="user-navigation-btn" href="#search"><span class="visually-hidden">Искать</span></a>
+                                    <form class="user-forms" action="https://echo.htmlacademy.ru " method="get">
+                                        <p class="forms">
+                                        <input id="search-user " class="search-icon-user field" type="text " name="search " placeholder="Что ищите?" required>
+                                        <label for="search-user " class="visually-hidden ">Что ищете?</label>
+                                    </p>
+                                        <button class="visually-hidden btn" type="submit">Поиск</button>
+                                    </form>
+                                </li>
+                                <li id="login" class="login-link">
+                                    <a class="user-navigation-btn" href="#login">Вход</a>
+                                    <h2 class="visually-hidden">Личный кабинет</h2>
+                                    <form class="user-forms" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+                                        <p class="forms">
+                                          <input id="email" class="login-info field" type="text" name="login-mail" required>
+                                          <label for="email">Электронная почта</label>
+                                        </p>
+                                        <p class="forms">
+                                          <input id="password" class="password-info field" type="password" name="login-pass" autocomplete="off" required>
+                                          <label for="password">Пароль</label>
+                                        </p>
+                                        <div class="controls">
+                                          <button class="btn" type="submit">Войти</button>
+                                          <p class="login-buttons">
+                                            <a href="#">Забыли пароль?</a>
+                                            <a href="#">Новая регистрация</a>
+                                          </p>
+                                        </div>
+                                      </form>
+                                </li>
+                               <li id="bin" class="bin-link">
+                            <a class="user-navigation-btn bin-full" href="#bin">2 товара</a>
+                            <div class="bin user-forms">
+                              <table class="bin-table">
+                                <thead class="visually-hidden">
+                                  <tr>
+                                    <th>Удалить</th>
+                                    <th>Изображение</th>
+                                    <th>Название</th>
+                                    <th>Mасса × цена</th>
+                                    <th>Стоимость</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="bin-delete">
+                                      <button><span class="visually-hidden">Удалить</span></button>
+                                    </td>
+                                    <td class="bin-pic">
+                                      <img src="../img/product-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                                    </td>
+                                    <td class="bin-name">Пломбир с апельсиновым джемом</td>
+                                    <td class="bin-price">1,5 кг × <span>200 руб.</span></td>
+                                    <td class="bin-value">300 руб.</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="bin-delete">
+                                      <button><span class="visually-hidden">Удалить</span></button>
+                                    </td>
+                                    <td class="bin-pic">
+                                      <img src="../img/product-3.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                                    </td>
+                                    <td class="bin-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                                    <td class="bin-price">1,5 кг × <span>300 руб.</span></td>
+                                    <td class="bin-value">450 руб.</td>
+                                  </tr>
+                                </tbody>
+                                <tfoot>
+                                  <tr>
+                                    <td class="bin-cost" colspan="5">Итого: 750 руб.</td>
+                                  </tr>
+                                </tfoot>
+                              </table>
+                              <a class="btn" href="#">Оформить заказ</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </nav>
+                                      <div class="contacts">
+                                            <p class="time-of-work">
+                                                    C 10 до 22, ежедневно</p>
+                                            <a class="phone" href="#">8 812 450-25-25</a>
+                                            </div>
             </header>
             <main class="container">
                 <ul class="breadcrumbs">
@@ -304,26 +376,7 @@
                         <li class="pagination-item"><a href="#">5</a></li>
                     </ul>
                 </section>
-                <section class="modal modal-login">
-                    <h2 class="visually-hidden">Личный кабинет</h2>
-                    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                        <p>
-                            <label for="login-user">Логин</label>
-                            <input id="login-user" class="login-icon-user" type="text" name="login" placeholder="Логин">
-                        </p>
-                        <p>
-                            <label for="password-user">Пароль</label>
-                            <input id="password-user" class="login-icon-password" type="password" name="password" placeholder="Пароль">
-                        </p>
-                        <a class="restore" href="#">Забыли пароль?</a>
-                        <a class="registration" href="#">Новая регистрация</a>
-                        <button class="button" type="submit">
-                      Войти
-                  </button>
-                    </form>
-                    <button class="modal-close" type="submit">Закрыть</button>
-                </section>
-            </main>
+                </main>
             <footer class="main-footer">
                 <div class="footer-social">
 
